@@ -103,7 +103,7 @@
   @apply py-4 px-64 md:px-32 flex items-center justify-between;
 }
 @utility section-padding {
-  @apply py-32 px-64 md:px-32 
+  @apply py-16 px-64 md:px-32 
 }
 
 @layer base {
