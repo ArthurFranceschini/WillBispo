@@ -1,0 +1,38 @@
+<section id="Eventos" class="section-padding">
+    <div class="flex flex-col w-full md:w-1/2 text-white relative z-20 px-4 md:px-0">
+        <a href="/" class="group mb-8 md:mb-16"> 
+            <img src="/Upscale Header.svg" alt="Upscale" class="h-6 md:h-8 w-auto transition-all duration-300 group-hover:scale-120 group-hover:opacity-80" />
+        </a>
+        <h1 class="mb-6 md:mb-8 text-2xl md:text-4xl">O evento que vai mudar sua visão sobre negócios.</h1>
+        <p class="mb-8 md:mb-16 text-sm md:text-base text-justify">O <span class="font-bold text-accent">Up Scale</span> é um evento exclusivo para empresários e lideranças que desejam acelerar resultados e criar conexões de alto impacto.
+        Temas como licenciamento, franquias, gestão para escala e posicionamento de influência.</p>
+        <a href="/" class="btn-primary mb-8 md:mb-16">Confira já</a>
+    </div>
+</section>
+
+<style>
+  #Eventos {
+    position: relative; 
+    background-image: url('/eventos-bg.png'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+  }
+
+  #Eventos::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    z-index: 1; 
+  }
+
+  @media (max-width: 768px) {
+    #Eventos::before {
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6));
+    }
+  }
+</style>

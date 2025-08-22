@@ -1,14 +1,59 @@
----
----
 <header class="fixed w-full bg-transparent pt-4 transition-colors duration-300" style="z-index: 9999;">
   <div class="container-header">
+    <a href="/" class="text-white text-2xl font-bold hidden md:block">Logo Aqui</a>
+
     <nav class="text-white hidden md:flex items-center space-x-8">
       <a href="/" class="btn-header">Home</a>
       <a href="/" class="btn-header">Investimento</a>
       <a href="/" class="btn-header">Método BIG</a>
-      <a href="/" class="group"> <img src="/Upscale Header.svg" alt="Upscale" class="h-8 w-auto transition-all duration-300 group-hover:scale-120 group-hover:opacity-80" /></a>
+      <a href="/" class="group">
+        <img src="/Upscale Header.svg" alt="Upscale" class="h-8 w-auto transition-all duration-300 group-hover:scale-120 group-hover:opacity-80" />
+      </a>
     </nav>
-      <a>Logo Aqui</a>
-      </div>
+
+    <div class="flex items-center justify-between w-full md:hidden">
+      <a href="/" class="text-white text-xl font-bold">Logo Aqui Mobile</a>
+      <button id="mobile-menu-button" class="text-white focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="fixed inset-0 bg-primary bg-opacity-95 z-50 transform -translate-x-full transition-transform duration-300 md:hidden">
+    <div class="p-4 flex justify-end">
+      <button id="close-mobile-menu" class="text-white focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+    </div>
+    <nav class="flex flex-col items-center space-y-8 text-white text-2xl font-bold mt-16">
+      <a href="/" class="hover:text-accent">Home</a>
+      <a href="/" class="hover:text-accent">Investimento</a>
+      <a href="/" class="hover:text-accent">Método BIG</a>
+      <a href="/" class="group pt-8">
+        <img src="/Upscale Header.svg" alt="Upscale" class="h-12 w-auto transition-all duration-300 group-hover:scale-110 group-hover:opacity-80" />
+      </a>
+    </nav>
   </div>
 </header>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const closeMobileMenuButton = document.getElementById('close-mobile-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.remove('-translate-x-full');
+    });
+
+    closeMobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.add('-translate-x-full');
+    });
+    
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('-translate-x-full');
+      });
+    });
+  });
+</script>

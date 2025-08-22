@@ -23,13 +23,13 @@
   
   <div class="container-custom relative">
     <div class="slide-up text-center" transition:animate="slide">
-      <h2 class="text-accent pt-32 pb-32">Nos próximos 12 meses...</h2>
-      <h1 class="text-white pb-16">Vou te guiar para estruturar um negócio <span class="text-accent">sólido</span>, <span class="text-accent">lucrativo </span> e <span class="text-accent">preparado </span> para o futuro.</h1>
-      <p class="text-white">O Scale X é o ponto de virada para quem quer aprender a estruturar, escalar e criar um negócio lucrativo, recorrente e alinhado com o impacto que deseja gerar no mundo.</p>
+      <h2 class="text-accent pt-8 pb-6 md:pt-32 md:pb-32">Nos próximos 12 meses...</h2>
+      <h1 class="text-white pb-6 md:pb-16 text-2xl md:text-4xl lg:text-5xl">Vou te guiar para estruturar um negócio <span class="text-accent">sólido</span>, <span class="text-accent">lucrativo </span> e <span class="text-accent">preparado </span> para o futuro.</h1>
+      <p class="text-white text-sm md:text-base lg:text-lg px-4 md:px-0">O Scale X é o ponto de virada para quem quer aprender a estruturar, escalar e criar um negócio lucrativo, recorrente e alinhado com o impacto que deseja gerar no mundo.</p>
     
-      <div class='py-32 flex items-center justify-center space-x-8'> 
-        <a href="/" class="btn-primary w-64">Reserve sua vaga</a> 
-        <a href="/" class="btn-secondary w-64">Confira o próximo evento</a>
+      <div class='py-8 md:py-32 flex flex-col items-center justify-center space-y-4 md:flex-row md:space-x-8 md:space-y-0 px-4 md:px-0'> 
+        <a href="/" class="btn-primary w-full md:w-64">Reserve sua vaga</a> 
+        <a href="/" class="btn-secondary w-full md:w-64">Confira o próximo evento</a>
       </div>
     </div>
   </div> 
@@ -45,22 +45,36 @@
     display: flex;
     animation: scroll 20s linear infinite;
     white-space: nowrap;
-    width: 200%;
+    width: 200%; 
   }
 
   .carousel-item {
     flex-shrink: 0;
-    font-size: 35rem;
+    font-size: 20rem;
     font-weight: bold;
     color: white;
-    margin-right: 35rem;
+    margin-right: 20rem; 
     opacity: 0.5;
+  }
+
+  @media (min-width: 769px) {
+    .carousel-item {
+      font-size: 35rem;
+      margin-right: 35rem; 
+    }
   }
 
   @media (max-width: 768px) {
     .carousel-item {
-      font-size: 4rem;
-      margin-right: 2rem;
+      font-size: 15rem;
+      margin-right: 15rem; 
+    }
+  }
+
+  @media (max-width: 480px) {
+    .carousel-item {
+      font-size: 12rem;
+      margin-right: 12rem; 
     }
   }
 </style>
