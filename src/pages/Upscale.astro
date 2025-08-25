@@ -1,0 +1,141 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+
+---
+
+<Layout title='Scale X - Upscale'>
+<Header/>
+<section class="section-padding relative overflow-hidden">
+
+    <div id="hero-carousel" transition:animate="slide" class="absolute inset-0 z-0">
+
+        <div class="carousel-inner flex h-full">
+         
+            <img src="/background-hero-1.jpg" alt="Fundo da Imersão Upscale 1" class="opacity-35 carousel-image flex-shrink-0 w-screen h-full object-cover">
+            <img src="/background-hero-2.jpg" alt="Fundo da Imersão Upscale 2" class="opacity-35 carousel-image flex-shrink-0 w-screen h-full object-cover">
+            <img src="/background-hero-3.jpg" alt="Fundo da Imersão Upscale 3" class="opacity-35 carousel-image flex-shrink-0 w-screen h-full object-cover">
+
+          
+            <img src="/background-hero-1.jpg" alt="Fundo da Imersão Upscale 1" class="opacity-35 carousel-image flex-shrink-0 w-screen h-full object-cover">
+            <img src="/background-hero-2.jpg" alt="Fundo da Imersão Upscale 2" class="opacity-35 carousel-image flex-shrink-0 w-screen h-full object-cover">
+            <img src="/background-hero-3.jpg" alt="Fundo da Imersão Upscale 3" class="opacity-35 carousel-image flex-shrink-0 w-screen h-full object-cover">
+        </div>
+    </div>
+
+   
+    <div class="container-custom relative z-10">
+        <div class="slide-up text-center" transition:animate="slide">
+            <h2 class="text-accent pt-8 pb-8 md:pt-32 md:pb-32">27 DE SETEMBRO, CASCAVEL-PR </h2>
+            <h1 class="text-white md:pb-16 text-2xl md:text-4xl lg:text-5xl">Imersão | UPSCALE</h1>
+            <p class="text-white text-sm md:text-base lg:text-lg px-4 md:px-0">Crescer é preciso. Escalar é estratégia. </p>
+            <p class="text-white text-sm md::text-base lg:text-lg px-4 md:px-0">Um encontro único para mudar o rumo do seu negócio.  </p>
+
+            <div class='py-8 md:py-32 flex flex-col items-center justify-center space-y-4 md:flex-row md:space-x-8 md:space-y-0 px-4 md:px-0'>
+                <a href="/" class="btn-primary w-full md:w-64">Garantir meu ingresso</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-padding text-center">
+<h2 class="text-accent pt-8 pb-8 md:pt-16 md:pb-16">Um dia inteiro para acelerar seu crescimento.</h2>
+<p class="text-white pt-8 pb-8 md:pt-16 md:pb-16">Na <span class="font-bold text-accent">Imersão UpScale</span>, você vai descobrir como estruturar seu negócio para crescer de forma 
+sustentável, aprender os caminhos para escalar com inteligência, conhecer modelos de 
+licenciamento e franquia, além de gerar conexões estratégicas com empresários que estão 
+na mesma jornada que você.</p>
+  <h2 class="text-white pb-16"">Esse evento é<span class='text-accent'> exclusivo </span>para:</h2>
+    <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <div class="flex flex-col items-center text-center px-2 py-2 md:px-4 md:py-4 lg:px-6 lg:py-6 border-2 border-accent rounded-xl">
+        <h1 class="text-white text-xs md:text-sm">Empresários que querem expandir seus negócios</h1>
+      </div>
+
+      <div class="flex flex-col items-center text-center px-2 py-2 md:px-4 md:py-4 lg:px-6 lg:py-6 border-2 border-accent rounded-xl">
+        <h1 class="text-white text-xs md:text-sm">Quem busca escala, licenciamento ou franquia</h1>
+      </div>
+
+      <div class="flex flex-col items-center text-center px-2 py-2 md:px-4 md:py-4 lg:px-6 lg:py-6 border-2 border-accent rounded-xl">
+        <h1 class="text-white text-xs md:text-sm">Líderes que querem clareza e estratégia para crescer</h1>
+      </div>
+
+      <div class="flex flex-col items-center text-center px-2 py-2 md:px-4 md:py-4 lg:px-6 lg:py-6 border-2 border-accent rounded-xl">
+        <h1 class="text-white text-xs md:text-sm">Profissionais que valorizam networking de alto nível</h1>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="bg-primary text-center section-padding relative overflow-hidden flex flex-col justify-center items-center"  transition:animate="slide" style="min-height: 400px;">
+
+  <div class="absolute top-0 left-0 w-full h-0.5 bg-accent opacity-40"></div>
+  <div class="absolute bottom-0 left-0 w-full h-0.5 bg-accent opacity-40"></div>
+  <div class="absolute top-0 left-0 h-full w-0.5 bg-accent opacity-40"></div>
+  <div class="absolute top-0 right-0 h-full w-0.5 bg-accent opacity-40"></div>
+
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <img src="Upscale Header.svg" alt="Sua Logo" class="h-64 w-64 mx-auto inline-block relative z-20">
+    <h2 class="text-white mb-4">Dia 27 de Setembro | Cascavel-PR </h2>
+    <h2 class="text-white mb-4">Das <span class="text-accent">9h às 12h</span> e das<span class="text-accent"> 14h às 17h</span></h2>
+    <h2 class="text-white mb-4">Uniguaçu - Polo Cascavel</h2>
+    
+    <div class="mt-16 mb-24 flex flex-col md:flex-row justify-center gap-8 w-full"> 
+      <div class="border-2 border-accent rounded-xl overflow-hidden flex-1"> 
+        <h1 class="bg-accent text-white py-2 text-center text-2xl md:text-4xl font-semibold">Promocional</h1>
+        <div class="flex flex-col items-center text-center px-2 py-2 md:px-4 md:py-4 lg:px-6 lg:py-6">
+            <h1 class="text-4xl my-8 md:text-7xl md:my-16 text-white font-bold">R$99,90</h1>
+            <a href="/" class="btn-primary opacity-50">Esgotado</a>
+        </div>
+      </div>
+
+      <div class="border-2 border-white rounded-xl overflow-hidden flex-1 float-animation"> 
+         <h1 class="bg-white text-accent py-2 text-center text-2xl md:text-4xl font-semibold">Indívidual</h1>
+        <div class="flex flex-col items-center text-center px-2 py-2 md:px-4 md:py-4 lg:px-6 lg:py-6">
+            <h1 class="text-4xl my-8 md:text-7xl md:my-16 text-accent font-bold">R$159,90</h1>
+            <a href="/" class="btn-primary bg-white text-accent">Garanta seu Ingresso!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</Layout>
+
+
+<style>
+  .carousel-inner {
+   
+    width: 600vw;
+    animation: slideImages 60s linear infinite;  }
+
+
+  .carousel-image {
+    min-width: 100vw; 
+  }
+
+  @keyframes slideImages {
+    0% {
+      transform: translateX(0); 
+    }
+    100% {
+     
+      transform: translateX(-300vw);
+    }
+  }
+
+
+  .float-animation {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+</style>
