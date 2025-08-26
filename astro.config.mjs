@@ -6,11 +6,17 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-integrations: [
-alpinejs()
-],
+  integrations: [
+    alpinejs()
+  ],
 
-vite: {
-plugins: [tailwindcss()]
-}
+  vite: {
+    plugins: [tailwindcss()],
+    server: {
+      port: 4321, 
+      allowedHosts: [
+        'd549dcabad4f.ngrok-free.app',
+      ],
+    }
+  }
 });
