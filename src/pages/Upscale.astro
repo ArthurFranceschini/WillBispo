@@ -107,30 +107,35 @@ na mesma jornada que você.</p>
     </div>
   </div>
 </section>
+<section class="section-padding items-center text-center">
+<h1 class="text-white mb-16">Esse é um encontro<span class="text-accent"> único</span>, com número restrito de participantes.</h1>
+<h1 class="text-accent text-xl sm:text-2xl md:text-3xl mb-16 md:mb-32">Se você deixar para depois, pode ficar de fora.</h1>
+<a href="/" class="btn-primary text-lg sm:text-xl md:text-4xl px-8 sm:px-16 md:px-32 py-4 pulse-button">Comprar Agora</a>
+</section>
+<section class="w-full">
+    <div class="h-8 bg-red-500"></div>
+</section>
 </Layout>
 
 
 <style>
-  .carousel-inner {
-   
+    .carousel-inner {
     width: 600vw;
-    animation: slideImages 60s linear infinite;  }
-
+    animation: slideImages 60s linear infinite;
+  }
 
   .carousel-image {
-    min-width: 100vw; 
+    min-width: 100vw;
   }
 
   @keyframes slideImages {
     0% {
-      transform: translateX(0); 
+      transform: translateX(0);
     }
     100% {
-     
       transform: translateX(-300vw);
     }
   }
-
 
   .float-animation {
     animation: float 3s ease-in-out infinite;
@@ -146,5 +151,22 @@ na mesma jornada que você.</p>
     100% {
       transform: translateY(0px);
     }
+  }
+
+  /* Nova animação de pulsação */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05); /* Aumenta um pouco o tamanho */
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .pulse-button {
+    animation: pulse 1.5s infinite ease-in-out; /* Aplica a animação */
   }
 </style>
